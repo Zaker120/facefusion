@@ -131,7 +131,7 @@ def analyse_stream(vision_frame : VisionFrame, video_fps : Fps) -> bool:
 	STREAM_COUNTER = STREAM_COUNTER + 1
 	if STREAM_COUNTER % int(video_fps) == 0:
 		return analyse_frame(vision_frame)
-	return False
+	return "False"
 
 
 def analyse_frame(vision_frame : VisionFrame) -> bool:
